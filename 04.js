@@ -21,11 +21,11 @@ Exempel på värden och deras svar:
 
 */
 
-let array = [1,2,0.3,4];
+let array = [1,2,5];
 var total = {
 }
 
-function get_average_sum(arr) {
+/*function get_average_sum(arr) {
     if (arr.length >= 2 && arr.length <= 10) {
         let sum = arr.reduce((acc, currValue) => {
             return acc + currValue;
@@ -38,17 +38,18 @@ function get_average_sum(arr) {
     }
 }
 get_average_sum(array);
-console.log(total);
+console.log(total);*/
 
 
-
-/*for (let i = 0; i < array.length; i++)
-    if (Number.isInteger(array[i])) {
-       
-    } else {
-        
+let count = 0;
+for (let i = 0; i < array.length; i++)
+    if (Number.isInteger(array[i]) == true) {
+       count++;
     }
-*/
+    if (count == array.length) {
+        console.log("ja")
+    }
+
 
 
 
