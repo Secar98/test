@@ -21,25 +21,34 @@ Exempel på värden och deras svar:
 
 */
 
-let array = [1,2,3,4,5,6,7,8,9,10,11];
+let array = [1,2,0.3,4];
 var total = {
 }
 
 function get_average_sum(arr) {
     if (arr.length >= 2 && arr.length <= 10) {
-    let sum = arr.reduce((acc, currValue) => {
-        return acc + currValue;
-    });
-    let avg = sum / arr.length;
-    total.summary = sum;
-    total.average = avg; 
+        let sum = arr.reduce((acc, currValue) => {
+            return acc + currValue;
+        });
+        let avg = sum / arr.length;
+        total.summary = sum;
+        total.average = avg;
     } else {
         return false;
     }
 }
 get_average_sum(array);
-console.log(get_average_sum(array));
+console.log(total);
 
+
+
+/*for (let i = 0; i < array.length; i++)
+    if (Number.isInteger(array[i])) {
+       
+    } else {
+        
+    }
+*/
 
 
 
