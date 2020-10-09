@@ -52,20 +52,20 @@ class Dice {
     calculateDiceValues() {
         this.dice_values = new Array(7).fill(0);
 
-        this.dice.maps(current_value => {
+        this.dice.map(current_value => {
             this.dice_values[current_value.value]++;
         })
     }
 
     show_dice() {
-        this.dice.map(current_value = > {
+        this.dice.map(current_value => {
             console.log(current_value.innerHTML);
         })
     }
 
     show_dice_values() {
         for ( let i = 0; i <= 7; i++ ) {
-            console.log(i + ': ' this.dice_values[i]);
+            console.log(i + ': ' + this.dice_values[i]);
         }
     }
 
