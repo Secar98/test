@@ -21,7 +21,7 @@ Exempel på värden och deras svar:
 
 */
 
-let array = [0,1,2,3,4,5,6];
+let array = [1,2];
 var total = {
 }
 let count = 0;
@@ -38,6 +38,7 @@ function get_average_sum(arr) {
             let avg = sum / arr.length;
             total.summary = sum;
             total.average = avg;
+            return true;
         } else {
             return false;
         }
@@ -45,7 +46,7 @@ function get_average_sum(arr) {
         return false;
     }
 }
-get_average_sum(array);
+console.log(get_average_sum(array));
 console.log(total);
 
 
